@@ -1,29 +1,20 @@
-📌 Project Overview
+# 🚀 API Data Ingestion Pipeline
 
-This project implements a production-style API data ingestion pipeline that ingests repository metadata from the GitHub REST API for the Spotify organization, performs incremental updates using a metadata watermark strategy, and loads the data into Google BigQuery for analytics and reporting.
+### 📌 Project Overview
+This project implements a production-style API data ingestion pipeline that ingests repository metadata from the **GitHub REST API** for the Spotify organization, performs incremental updates using a metadata watermark strategy, and loads the data into **Google BigQuery** for analytics and reporting.
 
-The pipeline is designed to reflect real-world data engineering workflows, including secure authentication, pagination handling, incremental ingestion, cloud-native storage, and orchestration using Apache Airflow.
+### 🏗️ Architecture
+**GitHub REST API** → **Python Ingestion Layer** → **Incremental Processing** → **BigQuery**
+* **Orchestration:** Apache Airflow (Dockerized)
 
-🏗️ Architecture
-GitHub REST API → Python Ingestion Layer → Incremental Processing → BigQuery → Analytics
-Orchestration: Apache Airflow (Dockerized)
-
-🧰 Tech Stack
-Language: Python 3
-API: GitHub REST API v3
-Cloud Platform: Google Cloud Platform (GCP)
-Data Warehouse: BigQuery
-Orchestration: Apache Airflow
-Containerization: Docker
-Libraries: requests, pandas, google-cloud-bigquery
-
-🔁 Key Features
-API authentication using GitHub tokens
-Pagination and rate-limit handling
-Incremental ingestion using BigQuery metadata watermark table
-Idempotent data loading into BigQuery
-Airflow DAG for scheduling and retries
-Secure service account-based cloud authentication
+### 🧰 Tech Stack
+* **Language:** Python 3
+* **API:** GitHub REST API v3
+* **Cloud Platform:** Google Cloud Platform (GCP)
+* **Data Warehouse:** BigQuery
+* **Orchestration:** Apache Airflow
+* **Containerization:** Docker
+* **Libraries:** `requests`, `pandas`, `google-cloud-bigquery`
 
 ### 📁 Repository Structure
 
@@ -51,24 +42,29 @@ API-DATA-INGESTION-PIPELINE/
 └── README.md
 
 ▶️ How to Run
-Configure environment variables (.env)
-Activate Python virtual environment
 
-Run locally:
+    Configure environment variables: Create a .env file in the root.
+
+    Activate Environment: source venv/bin/activate (or your local equivalent).
+
+    Run locally:
+    Bash
+
 python src/main.py
 
 Orchestrate with Airflow:
-docker compose up -d
+Bash
 
-📊 Sample Analytics
-Repository count by language
-Star and fork distribution
-Recently updated repositories
+    docker-compose up -d
 
 📈 What I Learned
-Designing scalable API ingestion pipelines
-Implementing incremental data processing using watermarks
-Using BigQuery as both storage and pipeline state manager
-Orchestrating workflows with Apache Airflow
 
-Applying production-ready cloud IAM and security practices
+    Designing scalable API ingestion pipelines.
+
+    Implementing incremental data processing using watermarks.
+
+    Using BigQuery as both storage and pipeline state manager.
+
+    Orchestrating workflows with Apache Airflow.
+
+    Applying production-ready cloud IAM and security practices.
