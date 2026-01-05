@@ -53,9 +53,8 @@ API-DATA-INGESTION-PIPELINE/
 ```python src/main.py```
 
 4.Orchestrate with Airflow:
-Bash
 
-  ```docker-compose up -d```
+```docker-compose up -d```
 
 📈 What I Learned
 
