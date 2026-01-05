@@ -16,32 +16,7 @@ This project implements a production-style API data ingestion pipeline that inge
 * **Containerization:** Docker
 * **Libraries:** `requests`, `pandas`, `google-cloud-bigquery`
 
-### 📁 Repository Structure
-
-```text
-API-DATA-INGESTION-PIPELINE/
-├── airflow/
-│   ├── dags/
-│   │   └── github_ingestion_dag.py
-│   ├── docker-compose.yaml
-│   └── logs/
-├── config/
-│   └── service-account-key.json
-├── sql/
-│   ├── ingestion_metadata.sql
-│   └── repositories.sql
-├── src/
-│   ├── extract.py
-│   ├── transform.py
-│   ├── load.py
-│   └── main.py
-├── .env
-├── .gitignore
-├── init_metadata.csv
-├── requirements.txt
-└── README.md
-
-▶️ How to Run
+  ▶️ How to Run
 
     Configure environment variables: Create a .env file in the root.
 
@@ -68,3 +43,29 @@ Bash
     Orchestrating workflows with Apache Airflow.
 
     Applying production-ready cloud IAM and security practices.
+
+
+### 📁 Repository Structure
+
+```text
+API-DATA-INGESTION-PIPELINE/
+├── airflow/
+│   ├── dags/
+│   │   └── github_ingestion_dag.py
+│   ├── docker-compose.yaml
+│   └── logs/
+├── config/
+│   └── service-account-key.json
+├── sql/
+│   ├── ingestion_metadata.sql
+│   └── repositories.sql
+├── src/
+│   ├── extract.py
+│   ├── transform.py
+│   ├── load.py
+│   └── main.py
+├── .env
+├── .gitignore
+├── init_metadata.csv
+├── requirements.txt
+└── README.md
