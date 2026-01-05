@@ -42,13 +42,9 @@ Secure service account-based cloud authentication
 
 📂 Repository Structure
 API-DATA-INGESTION-PIPELINE/
-│
 ├── airflow/
 │   └── dags/
-│       ├── __pycache__/
 │       └── github_ingestion_dag.py
-│
-├── docker-compose.yaml
 │
 ├── config/
 │   └── service-account-key.json
@@ -58,19 +54,18 @@ API-DATA-INGESTION-PIPELINE/
 │   └── repositories.sql
 │
 ├── src/
-│   ├── __pycache__/
 │   ├── extract.py
 │   ├── transform.py
 │   ├── load.py
 │   └── main.py
 │
-├── venv/
-│
+├── docker-compose.yaml
+├── init_metadata.csv
+├── requirements.txt
 ├── .env
 ├── .gitignore
-├── init_metadata.csv
-└── requirements.txt
 └── README.md
+
 ▶️ How to Run
 
 Configure environment variables (.env)
