@@ -58,12 +58,12 @@ API-DATA-INGESTION-PIPELINE/
 
 📈 What I Learned
 
- * Designing scalable API ingestion pipelines.
+* Designing scalable API ingestion pipelines.
 
- * Implementing incremental data processing using watermarks.
+* Implementing incremental data processing using watermarks.
 
- * Using BigQuery as both storage and pipeline state manager.
+* Using BigQuery as both storage and pipeline state manager.
 
- * Orchestrating workflows with Apache Airflow.
+* Orchestrating workflows with Apache Airflow.
 
- * Applying production-ready cloud IAM and security practices.
+* Applying production-ready cloud IAM and security practices.
