@@ -16,35 +16,6 @@ This project implements a production-style API data ingestion pipeline that inge
 * **Containerization:** Docker
 * **Libraries:** `requests`, `pandas`, `google-cloud-bigquery`
 
-  ▶️ How to Run
-
-    Configure environment variables: Create a .env file in the root.
-
-    Activate Environment: source venv/bin/activate (or your local equivalent).
-
-    Run locally:
-    Bash
-
-python src/main.py
-
-Orchestrate with Airflow:
-Bash
-
-    docker-compose up -d
-
-📈 What I Learned
-
-    Designing scalable API ingestion pipelines.
-
-    Implementing incremental data processing using watermarks.
-
-    Using BigQuery as both storage and pipeline state manager.
-
-    Orchestrating workflows with Apache Airflow.
-
-    Applying production-ready cloud IAM and security practices.
-
-
 ### 📁 Repository Structure
 
 ```text
@@ -69,3 +40,31 @@ API-DATA-INGESTION-PIPELINE/
 ├── init_metadata.csv
 ├── requirements.txt
 └── README.md
+```
+
+▶️ How to Run
+
+  1.Configure environment variables: Create a .env file in the root.
+
+  2.Activate Environment: source venv/bin/activate (or your local equivalent).
+
+  3.Run locally:
+
+```python src/main.py```
+
+4.Orchestrate with Airflow:
+Bash
+
+  ```docker-compose up -d```
+
+📈 What I Learned
+
+ * Designing scalable API ingestion pipelines.
+
+ * Implementing incremental data processing using watermarks.
+
+ * Using BigQuery as both storage and pipeline state manager.
+
+ * Orchestrating workflows with Apache Airflow.
+
+ * Applying production-ready cloud IAM and security practices.
